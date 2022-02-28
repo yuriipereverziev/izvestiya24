@@ -98,6 +98,7 @@
   background-color: #fff;
 
   @include rm(1024){
+    width: auto;
     padding-left: 10px;
   }
 }
