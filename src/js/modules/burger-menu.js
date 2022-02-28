@@ -1,19 +1,12 @@
 export default function () {
 
-    let ham = document.querySelector('.burger');
-    let nav = document.querySelector('.header__menu');
+    let ham = document.querySelector('.header-btn');
+    let nav = document.querySelector('.header-actions');
 
     ham.addEventListener('click', function () {
-        nav.classList.toggle('active');
-        activateBurger()
+        ham.classList.toggle('opened');
+        nav.classList.toggle('opened');
     })
-
-    function activateBurger() {
-
-        document.querySelector('.burger-top').classList.toggle('burger-top-click');
-        document.querySelector('.burger-middle').classList.toggle('burger-middle-click');
-        document.querySelector('.burger-bottom').classList.toggle('burger-bottom-click');
-    }
-};
+}
 
 
