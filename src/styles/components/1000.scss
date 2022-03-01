@@ -1,22 +1,29 @@
-
 /* unemployment */
 .unemployment {
   padding: 90px 0 20px;
 }
+
 .unemployment__main {
   width: 100%;
   margin-bottom: 20px;
 }
+
 .unemployment__img {
   margin-bottom: 20px;
 }
+
 .unemployment__title {
   margin-bottom: 10px;
 
-  @include rm(1024){
+  @include rm(1024) {
     text-align: left;
+    font-size: 26px;
+  }
+  @include rm(1220) {
+    font-size: 26px;
   }
 }
+
 .unemployment__post {
   display: flex;
   flex-wrap: wrap;
@@ -26,31 +33,41 @@
 
   margin-bottom: 10px;
 }
+
 .unemployment__post-item {
   margin: 0 10px;
 }
+
 .unemployment__text {
   margin-bottom: 20px;
 }
+
 .unemployment__text:last-child {
   margin-bottom: 0;
 }
+
 .unemployment__text--italic {
   font-style: italic;
 }
+
+
 .sidebar__head {
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
   border-bottom: 1px solid #dadada;
 }
+
 .sidebar__tab {
+  color: #000;
   width: 150px;
   padding-bottom: 10px;
   font-size: 18px;
   font-weight: 500;
   text-align: center;
+  cursor: pointer;
 }
+
 .active__tab {
   color: #FF120D;
   border-bottom: 3px solid #FF120D;
@@ -59,9 +76,11 @@
 .sidebar__link {
   color: #000;
 }
+
 .sidebar__link:hover {
   color: #FF120D;
 }
+
 .news {
   display: flex;
   margin-bottom: 15px;
@@ -131,7 +150,8 @@
 .news__views {
   margin-right: 0;
 }
-@media screen and (min-width:320px) {
+
+@media screen and (min-width: 320px) {
   .sidebar__head {
     flex-direction: column;
     align-items: center;
@@ -140,7 +160,8 @@
     margin-bottom: 15px;
   }
 }
-@media screen and (min-width:480px) {
+
+@media screen and (min-width: 480px) {
   .unemployment__title,
   .unemployment__post {
     margin-bottom: 20px;
@@ -166,15 +187,15 @@
 
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
 
   .text {
     font-size: 18px;
-    text-align: justify;
+    text-align: left;
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
 
   .text {
     font-size: 20px;
@@ -198,15 +219,136 @@
   .unemployment__wrapper {
     display: flex;
     justify-content: center;
+
+    @include rm(1220){
+      justify-content: flex-start;
+    }
   }
   .unemployment__main {
     margin: 0 30px 0 0;
   }
 }
 
-@media screen and (min-width:1220px) {
-  .sidebar {
+.sidebar {
+  width: 100%;
+  max-width: 100%;
+
+  @include rm(1024){
+    max-width: 395px;
+  }
+
+  @include rm(1220){
     max-width: 450px;
+  }
+}
+
+
+.item-template-1-share-panel-container {
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #00f;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.item-template-1-share-panel {
+
+  display: none;
+
+  @include rm(1024){
+    display: block;
+    margin-right: 25px;
+  }
+
+  @include rm(1220){
+    margin-right: 45px;
+    position: sticky;
+    top: 100px;
+  }
+
+
+}
+
+//
+//.item-template-1-share-panel-content {
+//  margin-top: 20px;
+//}
+
+.item-template-1-share-panel-container--twitter {
+  background-color: #55acee;
+}
+
+.item-template-1-share-panel-container--whatsapp {
+  background-color: #25d366;
+}
+
+.item-template-1-share-panel-container--telegram {
+  background-color: #64a9dc;
+}
+
+.item-template-1-share-panel-container--facebook {
+  background-color: #3b5998;
+}
+
+.item-template-1-share-panel-container--more {
+  background-color: #e8e8e8;
+}
+
+.unemployment__block {
+  @include rm(1220){
+    max-width: 600px;
     width: 100%;
+  }
+}
+
+.unemployment__social {
+
+  @include rm(1024){
+    position: relative;
+    width: 50px;
+    flex-shrink: 0;
+    max-width: 100%;
+  }
+
+  @include rm(1220){
+    width: 60px;
+  }
+}
+
+.sticky {
+  @include rm(1024) {
+    position: fixed;
+    top: 100px;
+  }
+}
+
+.sidebar__wrapper {
+  @include rm(1024){
+    position: fixed;
+    max-width: 395px;
+    width: 100%;
+  }
+  @include rm(1220) {
+    max-width: 450px;
+
   }
 }
