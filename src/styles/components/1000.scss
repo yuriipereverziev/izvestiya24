@@ -1,0 +1,208 @@
+
+/* unemployment */
+.unemployment {
+  padding: 90px 0 20px;
+}
+.unemployment__main {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.unemployment__img {
+  margin-bottom: 20px;
+}
+.unemployment__title {
+  margin-bottom: 10px;
+}
+.unemployment__post {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1.3;
+
+  margin-bottom: 10px;
+}
+.unemployment__post-item {
+  margin: 0 10px;
+}
+.unemployment__text {
+  margin-bottom: 20px;
+}
+.unemployment__text:last-child {
+  margin-bottom: 0;
+}
+.unemployment__text--italic {
+  font-style: italic;
+}
+.sidebar__head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #dadada;
+}
+.sidebar__tab {
+  width: 150px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+.active__tab {
+  color: #FF120D;
+  border-bottom: 3px solid #FF120D;
+}
+
+.sidebar__link {
+  color: #000;
+}
+.sidebar__link:hover {
+  color: #FF120D;
+}
+.news {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.news__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.news__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.news__subwrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.news__img {
+  min-width: 80px;
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.news__img img {
+  border-radius: 6px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.news__date, .news__comment, .news__views {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 11px;
+  margin-right: 10px;
+  color: #b4b4b4;
+}
+
+.news__date::before, .news__comment::before, .news__views::before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-image: url(../img/calendar.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-right: 5px;
+}
+
+.news__comment::before {
+  background-image: url(../img/comments.png);
+}
+
+.news__views::before {
+  background-image: url(../img/views.png);
+}
+
+.news__views {
+  margin-right: 0;
+}
+@media screen and (min-width:320px) {
+  .sidebar__head {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sidebar__tab {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width:480px) {
+  .unemployment__title,
+  .unemployment__post {
+    margin-bottom: 20px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  .unemployment__post {
+    justify-content: flex-start;
+  }
+  .unemployment__post-item:first-child {
+    margin-left: 0;
+  }
+  .sidebar__head {
+    flex-direction: row;
+  }
+  .sidebar__tab {
+    margin-bottom: 0;
+  }
+
+}
+
+@media screen and (min-width:768px) {
+
+  .text {
+    font-size: 18px;
+    text-align: justify;
+  }
+}
+
+@media screen and (min-width:1024px) {
+
+  .text {
+    font-size: 20px;
+  }
+  .bg {
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center
+  }
+
+  .webp .bg {
+    background-image: url(../img/block-bg.webp)
+  }
+
+  .bg,
+  .no-webp .bg {
+    background-image: url(../img/block-bg.jpg)
+  }
+
+  .unemployment__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .unemployment__main {
+    margin: 0 30px 0 0;
+  }
+}
+
+@media screen and (min-width:1220px) {
+  .sidebar {
+    max-width: 450px;
+    width: 100%;
+  }
+}

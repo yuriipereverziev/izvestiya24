@@ -1,4 +1,4 @@
-// import './helpers/postDate';
+import './helpers/postDate';
 import burger from './modules/burger-menu';
 
 function main() {
