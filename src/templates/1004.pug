@@ -1,0 +1,17 @@
+extends settings/layout
+
+prepend html
+    - const lang = "ru";
+
+prepend head
+    - const pageTitle = "Известия 24";
+    - const themeColor = "#ffffff";
+
+append head
+
+append content
+    include components/header
+    include components/news/1004-main
+
+append scripts
+
