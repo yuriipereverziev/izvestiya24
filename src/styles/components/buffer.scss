@@ -1,0 +1,16 @@
+.buffer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.buffer__title {
+  text-transform: uppercase;
+}
+
+.buffer__img {
+  margin: 0 auto;
+}
