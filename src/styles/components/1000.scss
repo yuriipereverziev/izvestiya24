@@ -12,6 +12,10 @@
 }
 .unemployment__title {
   margin-bottom: 10px;
+
+  @include rm(1024){
+    text-align: left;
+  }
 }
 .unemployment__post {
   display: flex;
