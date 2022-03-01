@@ -1,12 +1,23 @@
 .latest {
-  padding-top: 90px;
+  padding-top: 100px;
+
+
+  @include rm(1024){
+    padding-top: 90px;
+  }
 
 }
 
 .latest__title {
   font-size: 25px;
   margin-bottom: 20px;
+
+
   text-align: center;
+
+  @include rm(480){
+    margin-bottom: 0;
+  }
   @include rm(1024) {
     font-size: 28px;
     text-align: left;
@@ -20,21 +31,48 @@
 }
 
 .latest__title-wrapper {
-  @include rm(1024) {
-    display: flex;
+    display: none;
+
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 15px;
+
+  @include rm(480){
     margin-bottom: 30px;
+  }
+
+  @include rm(1024){
+    display: flex;
   }
 }
 
+.latest__all-news {
+  align-self: flex-end;
+}
+
+.latest__title-wrapper--mob {
+
+  display: flex;
+
+  flex-direction: column;
+
+  @include rm(480){
+    flex-direction: row;
+  }
+  @include rm(1024){
+    display: none;
+  }
+}
+
+
 .latest-item {
   display: flex;
-  max-width: 280px;
+  max-width: 100%;
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
 
-  @include rm(1024) {
+  @include rm(640) {
+    max-width: 280px;
     margin: 0;
   }
 }
@@ -63,7 +101,11 @@
   -webkit-line-clamp: 2;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  width: 190px;
+
+
+  @include rm(640){
+    width: 190px;
+  }
 
 
   &:hover {
@@ -82,9 +124,27 @@
 
 .latest-item__info {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   color: #b4b4b4;
   font-size: 11px;
+
+  @include rm(640){
+    justify-content: space-around;
+
+  }
+}
+
+.latest-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  padding-bottom: 5px;
+  padding-top: 5px;
+
+  @include rm(640){
+    display: block;
+    padding: 0;
+  }
 }
 
 
@@ -134,6 +194,7 @@
   @include rm(640) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   @include rm(1024) {
@@ -161,15 +222,33 @@
 
 .latest-mob {
   width: 100%;
-  max-width: 335px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
+.latest-mob__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.latest-mob__left {
+  max-width: 400px;
+  width: 100%;
+}
+
+.latest-mob__right {
+  max-width: 280px;
+}
+
 .latest-desk {
-  display: none;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  //display: none;
 
   @include rm(1024) {
-    display: block;
+    max-width: 100%;
+
   }
 }
 
