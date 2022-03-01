@@ -1,4 +1,4 @@
-@mixin r($width) {
+@mixin m($width) {
   @media screen and (max-width:$width + "px") {
     @content;
   }
