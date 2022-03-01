@@ -32,11 +32,13 @@
 }
 
 .navbar-logo {
-  width: 244px;
-  //height: 34px;
-
   width: 100%;
-  max-width: 244px;
+  max-width: 145px;
+
+  @include rm(1024){
+    max-width: 175px;
+  }
+
 }
 
 .header-btn {

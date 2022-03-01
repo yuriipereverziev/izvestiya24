@@ -17,6 +17,10 @@
   display: flex;
 }
 
+.pl0 {
+  padding-left: 0!important;
+}
+
 .feed-template-2-news-group-column:first-child {
   width: 50%;
 }
@@ -40,7 +44,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 20px 10px 20px;
+  padding: 0px 20px 10px 0px;
 }
 
 .feed-template-2-header-theme {
@@ -395,6 +399,7 @@
   text-overflow: ellipsis;
   -webkit-line-clamp: 3;
   display: -webkit-box;
+  overflow: hidden;
   -webkit-box-orient: vertical;
   max-height: 72px;
 }
