@@ -200,19 +200,7 @@
   @include rm(1024) {
     justify-content: space-between;
   }
-
-  //@include rm(1024){
-  //  max-width: 600px;
-  //  width: 100%;
-  //  margin-left: auto;
-  //}
 }
-
-//.latest-item:nth-child(3n+3) {
-//  @include rm(640){
-//    margin-bottom: 0;
-//  }
-//}
 
 .latest-item:nth-child(5) {
   @include rm(1024) {
@@ -290,10 +278,8 @@
 }
 
 .latest__all-news {
-  @include rm(1024) {
-    color: red;
-    font-weight: bold;
-  }
+  color: red;
+  font-weight: bold;
 }
 
 
