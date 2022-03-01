@@ -12,12 +12,16 @@
   z-index: 10;
 }
 
-.header-wrapper{
+.header-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   padding: 15px 0 15px 0;
+
+  @include rm(1024) {
+    padding-bottom: 0;
+  }
 }
 
 .header-logo__link {
@@ -28,7 +32,7 @@
 
 .navbar-logo {
   width: 244px;
-  height: 34px;
+  //height: 34px;
 
   width: 100%;
   max-width: 244px;
@@ -45,7 +49,7 @@
   z-index: 52;
   background-image: url(../img/burger.png);
 
-  @include rm(1024){
+  @include rm(1024) {
     display: none;
   }
 }
@@ -65,19 +69,21 @@
   transition: 0.4s;
   padding-top: 60px;
   padding-left: 34px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   z-index: 50;
 
-  @include rm(1024){
+  @include rm(1024) {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     flex-direction: row;
+
     position: static;
     transform: translateY(0);
     opacity: 1;
 
     padding-top: 0;
-    padding-left: 15px;
+    padding-bottom: 0;
+
 
   }
 }
@@ -97,15 +103,40 @@
   //margin-bottom: 8px;
   background-color: #fff;
 
-  @include rm(1024){
+  @include rm(1024) {
     width: auto;
     padding-left: 10px;
+    font-size: 16px;
+
+
+    //padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 17px;
+  }
+  @include rm(1220){
+    font-size: 18px;
+    padding-bottom: 25px;
   }
 }
 
-.header-actions__button--active{
+.header-actions__button--active {
   position: relative;
   color: #FF120D;
+
+
+  @include rm(1024){
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: #FF120D;
+    }
+  }
 }
 
 .header-actions__button--active:after {
@@ -118,7 +149,7 @@
   background: #FF120D;
   z-index: 56;
 
-  @include rm(1024){
+  @include rm(1024) {
     display: none;
   }
 }
@@ -132,7 +163,7 @@
 .header-actions.opened {
   transform: translateY(0%);
   opacity: 1;
-  //box-shadow: 0px 5px 14px rgb(0 0 0 / 40%);
+  box-shadow: 0 2px 7px #8a8a8a;
   background-color: #fff;
 }
 
@@ -140,10 +171,14 @@
   content: "";
   margin-top: 40px;
   width: 1px;
-  height: calc(100% - 40px);
+  height: calc(100% - 55px);
   position: absolute;
   top: 0;
   left: 34px;
   background-color: #dadada;
   z-index: 54;
+
+  @include rm(1024) {
+    display: none;
+  }
 }

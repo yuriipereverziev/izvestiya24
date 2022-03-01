@@ -2,8 +2,10 @@
 import burger from './modules/burger-menu';
 
 function main() {
-    burger();
+
 }
+
+burger();
 
 if (document.documentElement.clientWidth < 480) {
     window.addEventListener('scroll',
