@@ -1,7 +1,13 @@
 section.unemployment
     .container.unemployment__wrapper
         .unemployment__main
-            img.unemployment__img(src='img/news5-1_img.png' alt='image')
+
+            .unemployment__wrapper-img
+                picture
+                    source(type="image/webp", srcset="img/news5-1_img.webp")
+                    img.unemployment__img(src='img/news5-1_img.jpg')
+
+                span.unemployment__category.background-politics Политика
 
             .unemployment__wrapper
 
@@ -10,10 +16,11 @@ section.unemployment
                 .unemployment__block
                     h2.unemployment__title.title
                         | Запрет доллара в РФ не вызовет массовые увольнения в регионах
+
                     .unemployment__post
-                        span.unemployment__post-item.date-2(data-format='dd monthMin.')
-                        span.unemployment__post-item комментарии: 738
-                        span.unemployment__post-item просмотры: 4 млн.
+                        span.unemployment__post-item.date-1(data-format='dd monthMin.')
+                        span.unemployment__post-item комментарии: 764
+                        span.unemployment__post-item просмотры: 984тыс.
                     p.unemployment__text.text.unemployment__text--italic
                         | Меньше недели назад американский президент напугал Россию тем, что запретил нашим банкам расчеты в долларах. Новость вызвала панику в банковской сфере. Обычные граждане тоже напряглись: может ли запрет долларов ударить по их повседневной жизни? Например, лишить их работы.
                     p.unemployment__text.text
@@ -23,7 +30,5 @@ section.unemployment
                     p.unemployment__text.text
                         | Напомним, Правительство заморозило банковские счета россиян. Эти средства государство планирует потратить на покрытие расходов, связанных с военной спецоперацией на Украине. Также эти средства потратят на нивелирование экономических потерь от санкций из-за военной операции на Украине.
 
-
-
-        include ../aside
+        include ../aside-first
 

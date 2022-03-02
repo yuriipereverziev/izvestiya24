@@ -53,6 +53,8 @@
 
 .unemployment__post-item {
   margin: 0 10px;
+  display: flex;
+  align-items: center;
 }
 .unemployment__post-item::before {
   content: '';
@@ -114,6 +116,17 @@
 .sidebar__link:hover {
   color: #FF120D;
 }
+
+.sidebar__list .latest-item,
+.sidebar__list .latest-item__title{
+  width: 100%;
+  max-width: 100%;
+}
+
+.sidebar__list .latest-item:nth-child(5) {
+  margin-bottom: 15px;
+}
+
 
 .news {
   display: flex;

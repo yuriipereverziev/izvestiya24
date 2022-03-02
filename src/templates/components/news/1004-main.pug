@@ -1,7 +1,11 @@
 section.unemployment
     .container.unemployment__wrapper
         .unemployment__main
-            img.unemployment__img(src='img/news3-1_img.png' alt='image')
+            .unemployment__wrapper-img
+                picture
+                    source(type="image/webp", srcset="img/news3-1_img.webp")
+                    img.unemployment__img(src='img/news3-1_img.jpg')
+                span.unemployment__category.background-specProjects Спецпроекты
 
             .unemployment__wrapper
 
@@ -11,9 +15,9 @@ section.unemployment
                     h2.unemployment__title.title
                         | Швейцария присоединилась к санкциям ЕС против России вопреки своему нейтралитету
                     .unemployment__post
-                        span.unemployment__post-item.date-2(data-format='dd monthMin.')
-                        span.unemployment__post-item комментарии: 743
-                        span.unemployment__post-item просмотры: 2 млн.
+                        span.unemployment__post-item.date0(data-format='dd monthMin.')
+                        span.unemployment__post-item комментарии: 625
+                        span.unemployment__post-item просмотры: 637тыс.
 
                     p.unemployment__text.text.unemployment__text--italic
                         | Швейцария решила применить против России такие же санкции, как и Европейский союз, вопреки своему нейтралитету. Об этом сообщил Федеральный совет (Бундесрат) Швейцарии.
@@ -31,5 +35,5 @@ section.unemployment
                         | Страна закрывает свое авиационное пространство для российских самолетов.
 
 
-        include ../aside
+        include ../aside-first
 
