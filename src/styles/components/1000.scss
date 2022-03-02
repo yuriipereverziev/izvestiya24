@@ -402,3 +402,18 @@
 
   }
 }
+
+.unemployment__title-list {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 700;
+
+}
+.unemployment__list {
+  padding-left: 23px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.unemployment__item:not(:last-of-type) {
+  margin-bottom: 15px;
+}
