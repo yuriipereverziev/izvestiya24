@@ -1,0 +1,9 @@
+.all-news {
+  padding-top: 100px;
+}
+
+.all-news .latest-item:nth-child(9),
+.all-news .latest-item:nth-child(10),
+.all-news .latest-item:nth-child(11) {
+  margin-bottom: 0;
+}

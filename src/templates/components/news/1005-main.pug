@@ -2,7 +2,11 @@ section.unemployment
     .container.unemployment__wrapper
         .unemployment__main
             .unemployment__wrapper-img
-                img.unemployment__img(src='img/news3-2_img.png' alt='image')
+
+                picture
+                    source(type="image/webp", srcset="img/news3-2_img.webp")
+                    img.unemployment__img(src='img/news3-2_img.jpg')
+
                 span.unemployment__category.background-specProjects Спецпроекты
 
             .unemployment__wrapper
