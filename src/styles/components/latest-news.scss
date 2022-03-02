@@ -142,8 +142,9 @@
   padding-top: 5px;
 
   @include rm(640){
-    display: block;
+    //display: block;
     padding: 0;
+    padding-top: 6px;
   }
 }
 
@@ -188,6 +189,10 @@
 .latest-item__views, .latest-item__date, .latest-item__comments {
   display: flex;
   align-items: center;
+}
+
+.latest-item__date, .latest-item__comments {
+  margin-right: 10px;
 }
 
 .latest-list {

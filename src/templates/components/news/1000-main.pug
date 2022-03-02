@@ -2,7 +2,9 @@ section.unemployment
     .container.unemployment__wrapper
 
         .unemployment__main
-            img.unemployment__img(src='img/news1_img.png' alt='')
+            .unemployment__wrapper-img
+                img.unemployment__img(src='img/news1_img.png' alt='')
+                span.unemployment__category.background-politics Политика
 
             .unemployment__wrapper
 
@@ -16,7 +18,7 @@ section.unemployment
                     .unemployment__post
                         span.unemployment__post-item.date-2(data-format='dd monthMin.')
                         span.unemployment__post-item комментарии: 1254
-                        span.unemployment__post-item просмотры: 2 млн.
+                        span.unemployment__post-item просмотры: 4 млн.
                     p.unemployment__text.text.unemployment__text--italic
                         | Весна начнется с массовых сокращений. Это
                         | позволит оживить экономику, которая в последнее время демонстрирует отрицательный рост из-за
@@ -35,5 +37,5 @@ section.unemployment
                         | нужды армии.
 
 
-        include ../aside
+        include ../aside-first
 
